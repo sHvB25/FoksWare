@@ -11,7 +11,7 @@ import static foksware.wtf.client.Utils.Client.IMinecraft.mc;
 public class Sprint extends Module {
     public Sprint(String name, String desc, ModuleColoumn colounm) {
         super(name, desc, colounm);
-        //это затычка ебанная потом фиксану или ии фиксанет я хз
+        //это затычка ебанная потом фиксану или ии фиксанет я хззз
     }
 
     @Override
