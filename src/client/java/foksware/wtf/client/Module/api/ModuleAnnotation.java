@@ -9,5 +9,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface ModuleAnnotation {
-
+    String name();
+    String desc() default "ТЦК"; //тут только 3 кнопки
+    ModuleColoumn type();
 }
