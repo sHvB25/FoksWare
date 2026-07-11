@@ -1,14 +1,13 @@
 plugins {
 	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
-	// Подключаем официальный плагин Lombok, который изолирует его в компиляторе
-	id 'io.freefair.lombok' version '8.12.1'
 }
 
 version = project.mod_version
 group = project.maven_group
 
 repositories {
+	// Базовые репозитории
 	mavenCentral()
 }
 
@@ -28,8 +27,7 @@ dependencies {
 	mappings loom.officialMojangMappings()
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Из этого блока зависимости Lombok мы убрали, так как теперь их берёт на себя плагин выше!
-
+	// Fabric API
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 }
 
@@ -71,6 +69,7 @@ publishing {
 	repositories {
 	}
 }
+
 
 //через ии пофиксил блять градл потому что гитхаб залупа
 //пидарасы я не могу залить на гитзаб сууукаа
