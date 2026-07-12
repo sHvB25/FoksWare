@@ -1,23 +1,28 @@
 package foksware.wtf.client.Module.api;
 
 public class Module {
-    private final String name;
-    private final String desc;
-    private final ModuleColoumn coloumn;
-    public boolean toggled;
+    private String name;
+    private String desc;
+    private ModuleColoumn coloumn;
+    private boolean toggled;
 
     public void onEnable() {}
     public void onDisable() {}
     public void onTick() {}
     public void onRender2D() {}
     public void onRender3D() {}
-    
 
-    public Module(String name, String desc, ModuleColoumn colounm) {
-        this.name = name;
-        this.desc = desc;
-        this.coloumn = colounm;
-        this.toggled = false;
+
+
+    public Module() {
+        if (this.getClass().isAnnotationPresent(ModuleAnnotation.class)) {
+            ModuleAnnotation anno = this.getClass().getAnnotation(ModuleAnnotation.class);
+            this.name = anno.name();
+            this.desc = anno.desc();
+            this.coloumn = anno.type();
+        } else {
+            System.out.println("Хуйня переделывай");
+        }
     }
 
     public void toggle() {
