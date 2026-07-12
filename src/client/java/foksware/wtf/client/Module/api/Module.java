@@ -8,7 +8,10 @@ public class Module {
 
     public void onEnable() {}
     public void onDisable() {}
-
+    public void onTick() {}
+    public void onRender2D() {}
+    public void onRender3D() {}
+    
 
     public Module(String name, String desc, ModuleColoumn colounm) {
         this.name = name;
