@@ -1,9 +1,22 @@
 # FoksWare
 
-## Setup
+Всем привет короче мы тут чит кодим нейрослоп ебучий как обычно ну вообще пробую сам писать (я не знаю джавы если что)
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
 
-## License
+##Установка
+ну скачай просто в реализах ну я потом выложу в реализы а так пока качай с реализа (не смешно)
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+##Конец
+
+похуй я просто делаю ради себя мне щас нужно выучить джаву мой мозг еще не додумался просто тупо смотреть курсы и тд ну и ладно 
+
+##в будущем
+
+1 выложу в реализы
+2 доделать модуль репо 
+3 найти напарников себе
+4 написать модули и миксины для них
+5 обойти зотябы фанскай ну или ванилу 
+6 спастить утилки из тандерхака
+7 написать примитвное гуи
+8 чтобы о фоксваре узнало хотябы человек 5-10
