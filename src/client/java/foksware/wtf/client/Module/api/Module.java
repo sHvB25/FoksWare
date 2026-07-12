@@ -1,5 +1,7 @@
 package foksware.wtf.client.Module.api;
 
+import foksware.wtf.client.FoksWareClient;
+
 public class Module {
     private String name;
     private String desc;
@@ -32,6 +34,13 @@ public class Module {
         } else {
             onDisable();
         }
+    }
+
+    public void init() {
+        FoksWareClient.eventBus.register(this);
+    }
+    public void destroy() {
+        FoksWareClient.eventBus.unregister(this); //1944
     }
 
         public String getName() { return name; }
